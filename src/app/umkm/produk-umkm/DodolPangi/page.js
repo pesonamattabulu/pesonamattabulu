@@ -1,6 +1,8 @@
-    "use client";
+"use client";
 
 import Link from "next/link";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 export default function Page() {
   return (
