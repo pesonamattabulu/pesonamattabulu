@@ -71,13 +71,13 @@ const umkm2List = [
   },
   {
     name: "Dodol Pangi",
-    image: "/DodolPangi.jpg",
+    image: "/dodolpangi.jpg",
     price: "Rp 30.000",
     link: "produk-umkm/DodolPangi",
   },
   {
     name: "Kue Kopi",
-    image: "/KueKopi.jpg",
+    image: "/kuekopi.jpg",
     price: "Rp 55.000",
     link: "produk-umkm/KueKopi",
   },
