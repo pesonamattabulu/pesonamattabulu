@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 export default function PuncakAppasarengePage() {
   const [activeTab, setActiveTab] = useState("deskripsi");
@@ -8,13 +10,7 @@ export default function PuncakAppasarengePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-[#62BEDD] h-20 sm:h-30 px-4 sm:px-6 flex items-center justify-center">
-          <img
-            src="/icon1.png"
-            alt="Pesona Mattabulu"
-            className="h-full max-h-full object-contain"
-          />
-      </header>
+      <Header />
 
       {/* Main content */}
       <main className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
@@ -99,13 +95,17 @@ export default function PuncakAppasarengePage() {
             <>
               <h1 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">Puncak Appasarenge</h1>
               <p className="text-sm sm:text-base mb-4 indent-8">
-                Puncak Appasarenge adalah salah satu destinasi wisata alam yang berada di kawasan pegunungan Desa Mattabulu, Kabupaten Soppeng, Sulawesi Selatan. Tempat ini menawarkan pemandangan yang luar biasa indah, terutama saat matahari terbit dan terbenam.
-              </p>
-              <p className="text-sm sm:text-base mb-4 indent-8">
+                Puncak Appasarenge, terletak di Desa Mattabulu, Kecamatan Lalabata, Kabupaten Soppeng, Sulawesi Selatan, adalah destinasi wisata alam yang menawarkan keindahan panorama pegunungan. Dengan ketinggian sekitar 1.070 meter di atas permukaan laut, puncak ini menjadi salah satu daya tarik utama bagi wisatawan yang mencari ketenangan dan pemandangan spektakuler di tengah udara sejuk khas dataran tinggi.
                 Dikelilingi oleh hamparan hutan pinus dan udara yang sejuk, Puncak Appasarenge menjadi tempat favorit untuk berkemah dan bersantai.
               </p>
+              <p className="text-sm sm:text-base mb-4 indent-8">
+                Puncak Appasarenge menawarkan pengalaman mendaki yang relatif mudah diakses, dengan jalur yang dapat dilalui menggunakan kendaraan hingga titik tertentu. Dari puncaknya, pengunjung dapat menikmati pemandangan hamparan hijau perbukitan dan lembah di sekitar Mattabulu, menjadikannya tempat ideal untuk fotografi, berkemah, atau sekadar menikmati suasana alam yang damai.
+              </p>
+              <p className="text-sm sm:text-base mb-4  indent-8">
+                Bagi masyarakat Mattabulu, Puncak Appasarenge bukan hanya destinasi wisata, tetapi juga bagian dari identitas alam desa mereka. Puncak ini mencerminkan kekayaan alam Sulawesi Selatan yang masih alami, sekaligus menjadi simbol potensi wisata yang terus dikembangkan oleh BUMDes Pada Ati untuk meningkatkan perekonomian lokal melalui UMKM dan kegiatan pariwisata.
+              </p>
               <p className="text-sm sm:text-base indent-8">
-                Selain keindahan alamnya, kawasan ini juga sering dijadikan tempat kegiatan komunitas, seperti hiking, camping, dan acara keagamaan.
+                Puncak Appasarenge adalah destinasi yang wajib dikunjungi bagi siapa saja yang ingin merasakan pesona alam Mattabulu. Dengan akses yang relatif mudah dan pemandangan yang menawan, puncak ini menjanjikan pengalaman wisata yang tak terlupakan di jantungan Sulawesi Selatan.
               </p>
             </>
           )}
@@ -136,7 +136,7 @@ export default function PuncakAppasarengePage() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.554374256154!2d119.88857097499358!3d-4.369233296640814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dba52b8c05f2ec1%3A0x9b90a508cc728cdf!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid"
                   width="100%"
                   height="200"
-                  className="sm:h-250 md:h-300"
+                  className="sm:h-250 md:h-100"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
@@ -157,50 +157,7 @@ export default function PuncakAppasarengePage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#62BEDD] text-white px-4 sm:px-6 mt-auto overflow-hidden">
-        <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-col lg:flex-row justify-center md:justify-center lg:justify-between items-center space-y-4 md:space-y-4 lg:space-y-0 py-4 md:py-4 lg:py-0 text-center md:text-center lg:text-left">
-          {/* Logo kiri */}
-          <div className="h-full flex items-center">
-            <img
-              src="/icon1.png"
-              alt="Pesona Mattabulu"
-              className="h-16 md:h-20 lg:h-30 object-contain"
-            />
-          </div>
-
-          {/* Location + Sosmed */}
-          <div className="flex flex-col md:flex-col lg:flex-row lg:items-start lg:space-x-12 text-xs md:text-sm">
-            <div className="text-center md:text-center lg:text-left">
-              <p className="font-semibold">Location</p>
-              <p>
-                Desa Mattabulu, Kecamatan Lalabata,
-                <br />
-                Kabupaten Soppeng, Sulawesi Selatan
-                <br />
-                90811.
-              </p>
-            </div>
-
-            <div className="mt-4 md:mt-4 lg:mt-0 text-center md:text-center lg:text-left">
-              <p className="font-semibold mb-2">Find us on...</p>
-              <div className="flex justify-center md:justify-center lg:justify-start space-x-3">
-                <a href="#">
-                  <img src="/facebook.png" alt="Facebook" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/instagram.png" alt="Instagram" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/yt.png" alt="YouTube" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/tiktok.png" alt="TikTok" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* CSS Global Fix */}
       <style jsx global>{`

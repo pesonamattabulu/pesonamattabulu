@@ -129,7 +129,7 @@ export default function HomestayKemiri() {
                     Kontak
                   </p>
                   <p className="mt-1 text-black text-sm sm:text-base">
-                    📞 08132337471
+                    📞 0852-4209-0844 
                   </p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function HomestayKemiri() {
                   Lokasi
                 </p>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127244.02047050157!2d119.9466576!3d-4.3604895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefba862cff1a3%3A0x3030bfbcaf770b0!2sMattabulu%2C%20Lalabata%2C%20Soppeng%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1699999999999"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3978.264676189761!2d119.82104500000001!3d-4.361395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMjEnNDEuMCJTIDExOcKwNDknMTUuOCJF!5e0!3m2!1sid!2sid!4v1754901774067!5m2!1sid!2sid"
                   width="100%"
                   height="150"
                   style={{ border: 0 }}
@@ -149,7 +149,7 @@ export default function HomestayKemiri() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
                 <a
-                  href="https://www.google.com/maps?q=Mattabulu,+Lalabata,+Soppeng,+South+Sulawesi"
+                  href="https://maps.app.goo.gl/LQtFx1N3bnRFaGGb8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-1 text-blue-700 hover:underline inline-block text-sm sm:text-base"

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 export default function SitusBudayaPage() {
   const [activeTab, setActiveTab] = useState("bulu");
@@ -10,41 +12,32 @@ export default function SitusBudayaPage() {
     bulu: {
       title: "Petta Bulu Matanre",
       image: "/pettabulu.jpg",
-      description: `
-        Petta Bulu Matanre adalah tokoh leluhur yang sangat dihormati di wilayah Soppeng. Ia dikenal sebagai pemimpin yang bijaksana dan salah satu tokoh pertama yang memeluk islam di Soppeng. Situs budaya ini menjadi tempat ziarah dan refleksi spiritual bagi masyarakat lokal, dengan lingkungan yang masih alami dan tenang.
-      `,
-      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.554374256154!2d119.88857097499358!3d-4.369233296640814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dba52b8c05f2ec1%3A0x9b90a508cc728cdf!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid",
     },
     awo: {
       title: "Petta Awo",
       image: "/awo.jpg",
-      description: `
-        Petta Awo merupakan salah satu tokoh berpengaruh dalam sejarah kerajaan Soppeng. Ia memiliki peran penting dalam penyebaran nilai-nilai budaya dan tradisi masyarakat Bugis. Situs Petta Awo kerap dijadikan tempat kegiatan budaya dan upacara adat.
-      `,
-      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.554374256154!2d119.88857097499358!3d-4.369233296640814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dba52b8c05f2ec1%3A0x9b90a508cc728cdf!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid",
     },
     abbanuange: {
       title: "Petta Abbanuange",
       image: "/pettaabbanuange.jpg",
-      description: `
-        Petta Abbanuange dikenal sebagai tokoh spiritual yang diyakini memiliki kekuatan gaib untuk menyembuhkan dan melindungi desa. Situs ini merupakan salah satu warisan budaya penting yang mencerminkan kepercayaan dan sistem nilai masyarakat setempat.
-      `,
-      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.554374256154!2d119.88857097499358!3d-4.369233296640814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dba52b8c05f2ec1%3A0x9b90a508cc728cdf!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid",
     },
   };
 
-  const { title, image, description, mapUrl } = situsBudayaData[activeTab];
+  const staticDescription = `
+    Desa Mattabulu, yang terletak di Kecamatan Lalabata, Kabupaten Soppeng, Sulawesi Selatan, merupakan destinasi yang kaya akan warisan budaya. Desa ini dikenal karena keberadaan situs-situs budaya yang menjadi bagian penting dari sejarah dan identitas masyarakat Bugis. Tiga situs budaya utama di Mattabulu adalah Petta Bulu Matanre, Petta Awo, dan Petta Abbanuange, yang masing-masing memiliki nilai sejarah dan spiritual yang mendalam bagi masyarakat setempat.
+  
+    Petta Bulu Matanre adalah salah satu situs budaya yang dihormati di Desa Mattabulu. Situs ini merupakan tempat ziarah yang dikaitkan dengan tokoh leluhur yang bijaksana, yang dikenal sebagai salah satu tokoh pertama yang memeluk Islam di wilayah Soppeng. Lingkungan situs ini masih alami dan tenang, menjadikannya tempat yang ideal untuk refleksi spiritual dan menghormati warisan leluhur. Petta Bulu Matanre tidak hanya menjadi simbol keimanan, tetapi juga cerminan nilai-nilai kepemimpinan dan kearifan lokal yang terus dijunjung tinggi.
+  
+    Selain Petta Bulu Matanre, Desa Mattabulu juga memiliki dua situs budaya penting lainnya, yaitu Petta Awo dan Petta Abbanuange. Kedua situs ini sama-sama menyimpan nilai sejarah dan budaya yang signifikan, melengkapi kekayaan warisan Desa Mattabulu. Meskipun tidak kalah penting, keduanya sering menjadi bagian dari kunjungan budaya yang memperkaya pengalaman wisatawan yang datang untuk mempelajari sejarah dan tradisi masyarakat Bugis di Soppeng.
+
+    Ketiga situs budaya ini mencerminkan kekayaan sejarah, spiritualitas, dan tradisi masyarakat Desa Mattabulu. Mereka tidak hanya menjadi tempat ziarah, tetapi juga simbol kebanggaan budaya yang terus dilestarikan. Bagi pengunjung, situs-situs ini menawarkan wawasan tentang nilai-nilai luhur masyarakat Bugis dan peran penting Mattabulu dalam sejarah Sulawesi Selatan.
+    `;
+  const staticMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.554374256154!2d119.88857097499358!3d-4.369233296640814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dba52b8c05f2ec1%3A0x9b90a508cc728cdf!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid";
 
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-[#62BEDD] h-20 sm:h-30 px-4 sm:px-6 flex items-center justify-center">
-          <img
-            src="/icon1.png"
-            alt="Pesona Mattabulu"
-            className="h-full max-h-full object-contain"
-          />
-      </header>
+      <Header />
 
       {/* Main */}
       <main className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
@@ -93,9 +86,9 @@ export default function SitusBudayaPage() {
         {/* Gambar */}
         <div className="mb-6 sm:mb-8">
           <img
-            src={image}
-            alt={title}
-            className="w-full h-48 sm:h-64 md:h-80 rounded-lg shadow-md object-cover"
+            src={situsBudayaData[activeTab].image}
+            alt={situsBudayaData[activeTab].title}
+            className="w-full h-48 sm:h-64 md:h-90 rounded-lg shadow-md object-cover"
           />
         </div>
 
@@ -117,67 +110,33 @@ export default function SitusBudayaPage() {
         {/* Konten & Map */}
         <div className="bg-[#FFF9DC] p-4 sm:p-6 rounded-lg text-gray-800 shadow-sm space-y-6">
           <div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">{title}</h2>
-            <p className="text-sm sm:text-base indent-8 text-justify whitespace-pre-line leading-relaxed tracking-wide">
-              {description.trim()}
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">Situs Budaya Desa Mattabulu</h2>
+            <p className="text-sm sm:text-base text-justify whitespace-pre-line leading-relaxed tracking-wide">
+              {staticDescription.trim()}
             </p>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 mt-8">Kontak</h2>
+            <p className="text-sm sm:text-base text-justify whitespace-pre-line leading-relaxed tracking-wide">
+              Untuk Info Lebih Lanjut Bisa Menghubungi BUMDes
+            </p>
+            <p className="text-sm sm:text-base text-blue-600 font-semibold mt-2">0852-4209-0844</p>
           </div>
 
           {/* Google Maps Embed */}
           <div className="w-full h-48 sm:h-64 md:h-80">
             <iframe
-              src={mapUrl}
+              src={staticMapUrl}
               className="w-full h-full rounded-md border-0"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title={`Lokasi ${title}`}
+              title="Lokasi Petta Bulu Matanre"
             ></iframe>
           </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#62BEDD] text-white px-4 sm:px-6 mt-auto overflow-hidden">
-        <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-col lg:flex-row justify-center md:justify-center lg:justify-between items-center space-y-4 md:space-y-4 lg:space-y-0 py-4 md:py-4 lg:py-0 text-center md:text-center lg:text-left">
-          <div className="h-full flex items-center">
-            <img
-              src="/icon1.png"
-              alt="Pesona Mattabulu"
-              className="h-16 md:h-20 lg:h-30 object-contain"
-            />
-          </div>
-          <div className="flex flex-col md:flex-col lg:flex-row lg:items-start lg:space-x-12 text-xs md:text-sm">
-            <div className="text-center md:text-center lg:text-left">
-              <p className="font-semibold">Location</p>
-              <p>
-                Desa Mattabulu, Kecamatan Lalabata,
-                <br />
-                Kabupaten Soppeng, Sulawesi Selatan
-                <br />
-                90811.
-              </p>
-            </div>
-            <div className="mt-4 md:mt-4 lg:mt-0 text-center md:text-center lg:text-left">
-              <p className="font-semibold mb-2">Find us on...</p>
-              <div className="flex justify-center md:justify-center lg:justify-start space-x-3">
-                <a href="#">
-                  <img src="/facebook.png" alt="Facebook" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/instagram.png" alt="Instagram" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/yt.png" alt="YouTube" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/tiktok.png" alt="TikTok" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* CSS Global Fix */}
       <style jsx global>{`

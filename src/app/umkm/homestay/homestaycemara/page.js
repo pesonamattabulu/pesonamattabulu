@@ -4,6 +4,8 @@ import React from "react";
 import Slider from "react-slick";
 import Link from "next/link";
 import Head from "next/head";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,13 +33,7 @@ export default function HomestayCemara() {
       </Head>
 
       {/* Header */}
-      <header className="bg-[#62BEDD] h-20 sm:h-30 px-4 sm:px-6 flex items-center justify-center">
-          <img
-            src="/icon1.png"
-            alt="Pesona Mattabulu"
-            className="h-full max-h-full object-contain"
-          />
-      </header>
+      <Header />
 
       {/* Slider Section */}
       <section className="relative px-4 sm:px-6 pt-16 sm:pt-20 pb-6 max-w-7xl mx-auto w-full">
@@ -140,7 +136,7 @@ export default function HomestayCemara() {
                   Lokasi
                 </p>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127244.02047050157!2d119.9466576!3d-4.3604895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefba862cff1a3%3A0x3030bfbcaf770b0!2sMattabulu%2C%20Lalabata%2C%20Soppeng%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1699999999999"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3978.265015104596!2d119.82052900000001!3d-4.361330999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMjEnNDAuOCJTIDExOcKwNDknMTMuOSJF!5e0!3m2!1sid!2sid!4v1754901488167!5m2!1sid!2sid"
                   width="100%"
                   height="150"
                   style={{ border: 0 }}
@@ -149,7 +145,7 @@ export default function HomestayCemara() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
                 <a
-                  href="https://www.google.com/maps?q=Mattabulu,+Lalabata,+Soppeng,+South+Sulawesi"
+                  href="https://maps.app.goo.gl/pDWpTCGb4qrUSDQG8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-1 text-blue-700 hover:underline inline-block text-sm sm:text-base"
@@ -176,68 +172,7 @@ export default function HomestayCemara() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#62BEDD] text-white px-4 sm:px-6 mt-auto overflow-hidden">
-        <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-col lg:flex-row justify-center md:justify-center lg:justify-between items-center space-y-4 md:space-y-4 lg:space-y-0 py-4 md:py-4 lg:py-0 text-center md:text-center lg:text-left">
-          {/* Logo kiri */}
-          <div className="h-full flex items-center">
-            <img
-              src="/icon1.png"
-              alt="Pesona Mattabulu"
-              className="h-16 md:h-20 lg:h-30 object-contain"
-            />
-          </div>
-
-          {/* Location + Sosmed di kanan */}
-          <div className="flex flex-col md:flex-col lg:flex-row lg:items-start lg:space-x-12 text-xs md:text-sm">
-            {/* Location */}
-            <div className="text-center md:text-center lg:text-left">
-              <p className="font-semibold">Location</p>
-              <p>
-                Desa Mattabulu, Kecamatan Lalabata,
-                <br />
-                Kabupaten Soppeng, Sulawesi Selatan
-                <br />
-                90811.
-              </p>
-            </div>
-
-            {/* Sosmed */}
-            <div className="mt-4 md:mt-4 lg:mt-0 text-center md:text-center lg:text-left">
-              <p className="font-semibold mb-2">Find us on...</p>
-              <div className="flex justify-center md:justify-center lg:justify-start space-x-3">
-                <a href="#">
-                  <img
-                    src="/facebook.png"
-                    alt="Facebook"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/instagram.png"
-                    alt="Instagram"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/yt.png"
-                    alt="YouTube"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/tiktok.png"
-                    alt="TikTok"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       <style jsx global>{`
   html, body {

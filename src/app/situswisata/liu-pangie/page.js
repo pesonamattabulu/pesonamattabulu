@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 export default function AirTerjunPage() {
   const [activeTab, setActiveTab] = useState("deskripsi");
@@ -8,13 +10,7 @@ export default function AirTerjunPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-[#62BEDD] h-20 sm:h-30 px-4 sm:px-6 flex items-center justify-center">
-          <img
-            src="/icon1.png"
-            alt="Pesona Mattabulu"
-            className="h-full max-h-full object-contain"
-          />
-      </header>
+      <Header />
 
       {/* Main content */}
       <main className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
@@ -99,13 +95,16 @@ export default function AirTerjunPage() {
             <>
               <h1 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">Air Terjun Liu Pangie</h1>
               <p className="text-sm sm:text-base mb-4 indent-8">
-                Air Terjun Liu Pangie adalah destinasi wisata alam yang memukau di Kabupaten Soppeng, Sulawesi Selatan, Indonesia. Terletak di Desa Mattabulu, Kecamatan Lalabata, air terjun ini menawarkan keindahan alam yang masih asri dengan suasana sejuk dan eksotis.
+                Air Terjun Liu Pangie, terletak di Desa Mattabulu, Kecamatan Lalabata, Kabupaten Soppeng, Sulawesi Selatan, adalah destinasi wisata alam yang memikat dengan keindahan air terjunnya yang jernih dan suasana hutan pinus yang asri. Berjarak hanya sekitar 600 meter dari Lembah Cinta, air terjun ini menjadi salah satu permata wisata Mattabulu yang menawarkan kesegaran dan ketenangan bagi pengunjung.
               </p>
               <p className="text-sm sm:text-base mb-4 indent-8">
-                Air Terjun Liu Pangie terdiri dari dua tingkatan dengan ketinggian beberapa meter, dikelilingi hutan pinus dan panorama pegunungan yang memanjakan mata. Airnya yang jernih dan segar mengalir dari sungai di kaki Pegunungan Mattabulu, menciptakan kolam alami yang cocok untuk berenang atau sekadar berendam.
+                Air Terjun Liu Pangie memiliki ketinggian beberapa meter dengan aliran air yang bersusun dua, mengalir dari sumber alami di kaki pegunungan Mattabulu. Airnya yang jernih dan sejuk, dikelilingi oleh vegetasi hijau dan hutan pinus, menciptakan suasana yang menenangkan. Pengunjung dapat berenang di kolam alami air terjun atau sekadar menikmati pemandangan alam yang eksotis. Lokasinya yang strategis, mudah diakses melalui jalan poros desa, menjadikannya destinasi ideal untuk wisata keluarga atau liburan akhir pekan.
+              </p>
+              <p className="text-sm sm:text-base mb-4 indent-8">
+                Bagi masyarakat Mattabulu, Air Terjun Liu Pangie bukan hanya destinasi wisata, tetapi juga simbol kebanggaan akan kekayaan alam desa mereka. Diresmikan oleh Bupati Soppeng pada 23 September 2020, air terjun ini menjadi bagian dari upaya desa untuk mempromosikan pariwisata dan meningkatkan kesejahteraan melalui pengelolaan BUMDes. Keindahan alamnya yang terjaga mencerminkan komitmen masyarakat untuk melestarikan lingkungan.
               </p>
               <p className="text-sm sm:text-base indent-8">
-                Destinasi ini terletak sekitar 600 meter dari objek wisata Lembah Cinta, menjadikannya bagian dari kawasan wisata alam yang terintegrasi di Desa Mattabulu. Keunikan Air Terjun Liu Pangie terletak pada suasana tenang dan alaminya, jauh dari hiruk-pikuk kota.
+                Air Terjun Liu Pangie adalah destinasi yang sempurna bagi mereka yang mencari ketenangan dan petualangan di tengah alam Sulawesi Selatan. Dengan fasilitas yang memadai dan pesona alam yang memukau, air terjun ini menjanjikan pengalaman wisata yang tak terlupakan di Desa Mattabulu.
               </p>
             </>
           )}
@@ -133,7 +132,7 @@ export default function AirTerjunPage() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.554374256154!2d119.88857097499358!3d-4.369233296640814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dba52b8c05f2ec1%3A0x9b90a508cc728cdf!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid"
                   width="100%"
                   height="200"
-                  className="sm:h-250 md:h-300"
+                  className="sm:h-250 md:h-100"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
@@ -154,50 +153,7 @@ export default function AirTerjunPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#62BEDD] text-white px-4 sm:px-6 mt-auto overflow-hidden">
-        <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-col lg:flex-row justify-center md:justify-center lg:justify-between items-center space-y-4 md:space-y-4 lg:space-y-0 py-4 md:py-4 lg:py-0 text-center md:text-center lg:text-left">
-          {/* Logo kiri */}
-          <div className="h-full flex items-center">
-            <img
-              src="/icon1.png"
-              alt="Pesona Mattabulu"
-              className="h-16 md:h-20 lg:h-30 object-contain"
-            />
-          </div>
-
-          {/* Location + Sosmed */}
-          <div className="flex flex-col md:flex-col lg:flex-row lg:items-start lg:space-x-12 text-xs md:text-sm">
-            <div className="text-center md:text-center lg:text-left">
-              <p className="font-semibold">Location</p>
-              <p>
-                Desa Mattabulu, Kecamatan Lalabata,
-                <br />
-                Kabupaten Soppeng, Sulawesi Selatan
-                <br />
-                90811.
-              </p>
-            </div>
-
-            <div className="mt-4 md:mt-4 lg:mt-0 text-center md:text-center lg:text-left">
-              <p className="font-semibold mb-2">Find us on...</p>
-              <div className="flex justify-center md:justify-center lg:justify-start space-x-3">
-                <a href="#">
-                  <img src="/facebook.png" alt="Facebook" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/instagram.png" alt="Instagram" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/yt.png" alt="YouTube" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/tiktok.png" alt="TikTok" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* CSS Global Fix */}
       <style jsx global>{`

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 export default function LembahCintaPage() {
   const [activeTab, setActiveTab] = useState("deskripsi");
@@ -9,14 +11,7 @@ export default function LembahCintaPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-[#62BEDD] h-20 sm:h-30 px-4 sm:px-6 flex items-center justify-center">
-
-          <img
-            src="/icon1.png"
-            alt="Pesona Mattabulu"
-            className="h-full max-h-full object-contain"
-          />
-      </header>
+      <Header />
 
       {/* Main content */}
       <main className="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
@@ -101,7 +96,10 @@ export default function LembahCintaPage() {
             <>
               <h1 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">Lembah Cinta</h1>
               <p className="text-sm sm:text-base mb-4 indent-8">
-                Lembah Cinta Mattabulu adalah destinasi wisata alam yang memukau di Kabupaten Soppeng, Sulawesi Selatan, Indonesia. Terletak di Desa Mattabulu, Kecamatan Lalabata, tempat ini dikenal dengan keindahan hutan pinus yang asri dan panorama bukit-bukit hijau. Lembah Cinta menawarkan suasana sejuk dan damai, cocok untuk melepas penat dari rutinitas sehari-hari. Destinasi ini juga memiliki cerita romantis sejak awal pembuatannya, yang menambah daya tarik tersendiri. Kawasan ini dilengkapi dengan berbagai wahana outbound dan spot foto estetik, menjadikannya favorit bagi keluarga dan pecinta petualangan.
+                Lembah Cinta Mattabulu adalah destinasi wisata alam yang memukau di Kabupaten Soppeng, Sulawesi Selatan, Indonesia. Terletak di Desa Mattabulu, Kecamatan Lalabata, tempat ini dikenal dengan keindahan hutan pinus yang asri dan panorama bukit-bukit hijau. Lembah Cinta menawarkan suasana sejuk dan damai, cocok untuk melepas penat dari rutinitas sehari-hari. Destinasi ini juga memiliki cerita romantis sejak awal pembuatannya, yang menambah daya tarik tersendiri. 
+              </p>
+              <p className="text-sm sm:text-base mb-4 indent-8">
+                Fasilitas di Lembah Cinta Mattabulu cukup lengkap untuk menjamin kenyamanan pengunjung. Terdapat area parkir untuk kendaraan pribadi, warung yang menyediakan makanan dan minuman, serta bangku-bangku untuk bersantai. Pengelolaan destinasi ini dilakukan oleh Badan Usaha Milik Desa (BUMDes) Pada Ati Mattabulu, memastikan fasilitas dan wahana terus dikembangkan untuk kenyamanan pengunjung. Kawasan ini dilengkapi dengan berbagai wahana outbound dan spot foto estetik, menjadikannya favorit bagi keluarga dan pecinta petualangan.
               </p>
               <p className="text-sm sm:text-base font-semibold mb-2">Aktivitas yang Dapat Dilakukan:</p>
               <ol className="list-decimal list-inside space-y-1 pl-4 mb-4 text-sm sm:text-base">
@@ -132,7 +130,7 @@ export default function LembahCintaPage() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.0912885777939!2d119.81557334442749!3d-4.376870899999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95f50e8068cb19%3A0xb40360aa545b5310!2sWisata%20Alam%20Lembah%20Cinta!5e0!3m2!1sid!2sid!4v1754144328087!5m2!1sid!2sid"
                   width="100%"
                   height="200"
-                  className="sm:h-250 md:h-300"
+                  className="sm:h-250 md:h-100"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
@@ -153,50 +151,7 @@ export default function LembahCintaPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#62BEDD] text-white px-4 sm:px-6 mt-auto overflow-hidden">
-        <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-col lg:flex-row justify-center md:justify-center lg:justify-between items-center space-y-4 md:space-y-4 lg:space-y-0 py-4 md:py-4 lg:py-0 text-center md:text-center lg:text-left">
-          {/* Logo kiri */}
-          <div className="h-full flex items-center">
-            <img
-              src="/icon1.png"
-              alt="Pesona Mattabulu"
-              className="h-16 md:h-20 lg:h-30 object-contain"
-            />
-          </div>
-
-          {/* Location + Sosmed */}
-          <div className="flex flex-col md:flex-col lg:flex-row lg:items-start lg:space-x-12 text-xs md:text-sm">
-            <div className="text-center md:text-center lg:text-left">
-              <p className="font-semibold">Location</p>
-              <p>
-                Desa Mattabulu, Kecamatan Lalabata,
-                <br />
-                Kabupaten Soppeng, Sulawesi Selatan
-                <br />
-                90811.
-              </p>
-            </div>
-
-            <div className="mt-4 md:mt-4 lg:mt-0 text-center md:text-center lg:text-left">
-              <p className="font-semibold mb-2">Find us on...</p>
-              <div className="flex justify-center md:justify-center lg:justify-start space-x-3">
-                <a href="#">
-                  <img src="/facebook.png" alt="Facebook" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/instagram.png" alt="Instagram" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/yt.png" alt="YouTube" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-                <a href="#">
-                  <img src="/tiktok.png" alt="TikTok" className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* CSS Global Fix */}
       <style jsx global>{`
