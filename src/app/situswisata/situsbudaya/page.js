@@ -24,13 +24,13 @@ export default function SitusBudayaPage() {
   };
 
   const staticDescription = `
-    Desa Mattabulu, yang terletak di Kecamatan Lalabata, Kabupaten Soppeng, Sulawesi Selatan, merupakan destinasi yang kaya akan warisan budaya. Desa ini dikenal karena keberadaan situs-situs budaya yang menjadi bagian penting dari sejarah dan identitas masyarakat Bugis. Tiga situs budaya utama di Mattabulu adalah Petta Bulu Matanre, Petta Awo, dan Petta Abbanuange, yang masing-masing memiliki nilai sejarah dan spiritual yang mendalam bagi masyarakat setempat.
+    Desa Mattabulu, yang terletak di Kecamatan Lalabata, Kabupaten Soppeng, Sulawesi Selatan, merupakan destinasi yang kaya akan warisan budaya. Desa ini dikenal karena keberadaan situs-situs budaya yang menjadi bagian penting dari sejarah dan identitas masyarakat Bugis. Tiga situs budaya utama di Desa Mattabulu adalah Petta Bulu Matanre, Petta Awo, dan Petta Abbanuange, yang masing-masing memiliki nilai sejarah dan spiritual yang mendalam bagi masyarakat setempat.
   
     Petta Bulu Matanre adalah salah satu situs budaya yang dihormati di Desa Mattabulu. Situs ini merupakan tempat ziarah yang dikaitkan dengan tokoh leluhur yang bijaksana, yang dikenal sebagai salah satu tokoh pertama yang memeluk Islam di wilayah Soppeng. Lingkungan situs ini masih alami dan tenang, menjadikannya tempat yang ideal untuk refleksi spiritual dan menghormati warisan leluhur. Petta Bulu Matanre tidak hanya menjadi simbol keimanan, tetapi juga cerminan nilai-nilai kepemimpinan dan kearifan lokal yang terus dijunjung tinggi.
   
     Selain Petta Bulu Matanre, Desa Mattabulu juga memiliki dua situs budaya penting lainnya, yaitu Petta Awo dan Petta Abbanuange. Kedua situs ini sama-sama menyimpan nilai sejarah dan budaya yang signifikan, melengkapi kekayaan warisan Desa Mattabulu. Meskipun tidak kalah penting, keduanya sering menjadi bagian dari kunjungan budaya yang memperkaya pengalaman wisatawan yang datang untuk mempelajari sejarah dan tradisi masyarakat Bugis di Soppeng.
 
-    Ketiga situs budaya ini mencerminkan kekayaan sejarah, spiritualitas, dan tradisi masyarakat Desa Mattabulu. Mereka tidak hanya menjadi tempat ziarah, tetapi juga simbol kebanggaan budaya yang terus dilestarikan. Bagi pengunjung, situs-situs ini menawarkan wawasan tentang nilai-nilai luhur masyarakat Bugis dan peran penting Mattabulu dalam sejarah Sulawesi Selatan.
+    Ketiga situs budaya ini mencerminkan kekayaan sejarah, spiritualitas, dan tradisi masyarakat Desa Mattabulu. Mereka tidak hanya menjadi tempat ziarah, tetapi juga simbol kebanggaan budaya yang terus dilestarikan. Bagi pengunjung, situs-situs ini menawarkan wawasan tentang nilai-nilai luhur masyarakat Bugis dan peran penting Desa Mattabulu dalam sejarah Sulawesi Selatan.
     `;
   const staticMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.554374256154!2d119.88857097499358!3d-4.369233296640814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dba52b8c05f2ec1%3A0x9b90a508cc728cdf!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng!5e0!3m2!1sid!2sid!4v1691234567890!5m2!1sid!2sid";
 
@@ -116,7 +116,7 @@ export default function SitusBudayaPage() {
             </p>
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 mt-8">Kontak</h2>
             <p className="text-sm sm:text-base text-justify whitespace-pre-line leading-relaxed tracking-wide">
-              Untuk Info Lebih Lanjut Bisa Menghubungi BUMDes
+              Untuk Informasi Lebih Lanjut Bisa Menghubungi Lembaga Adat Desa dan BUMDes
             </p>
             <p className="text-sm sm:text-base text-blue-600 font-semibold mt-2">0852-4209-0844</p>
           </div>

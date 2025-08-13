@@ -99,13 +99,13 @@ export default function PuncakAppasarengePage() {
                 Dikelilingi oleh hamparan hutan pinus dan udara yang sejuk, Puncak Appasarenge menjadi tempat favorit untuk berkemah dan bersantai.
               </p>
               <p className="text-sm sm:text-base mb-4 indent-8">
-                Puncak Appasarenge menawarkan pengalaman mendaki yang relatif mudah diakses, dengan jalur yang dapat dilalui menggunakan kendaraan hingga titik tertentu. Dari puncaknya, pengunjung dapat menikmati pemandangan hamparan hijau perbukitan dan lembah di sekitar Mattabulu, menjadikannya tempat ideal untuk fotografi, berkemah, atau sekadar menikmati suasana alam yang damai.
+                Puncak Appasarenge menawarkan pengalaman mendaki yang relatif mudah diakses, dengan jalur yang dapat dilalui menggunakan kendaraan hingga titik tertentu. Dari puncaknya, pengunjung dapat menikmati pemandangan hamparan hijau perbukitan dan lembah di sekitar Desa Mattabulu, menjadikannya tempat ideal untuk fotografi, berkemah, atau sekadar menikmati suasana alam yang damai.
               </p>
               <p className="text-sm sm:text-base mb-4  indent-8">
-                Bagi masyarakat Mattabulu, Puncak Appasarenge bukan hanya destinasi wisata, tetapi juga bagian dari identitas alam desa mereka. Puncak ini mencerminkan kekayaan alam Sulawesi Selatan yang masih alami, sekaligus menjadi simbol potensi wisata yang terus dikembangkan oleh BUMDes Pada Ati untuk meningkatkan perekonomian lokal melalui UMKM dan kegiatan pariwisata.
+                Bagi masyarakat Desa Mattabulu, Puncak Appasarenge bukan hanya destinasi wisata, tetapi juga bagian dari identitas alam desa mereka. Puncak ini mencerminkan kekayaan alam Sulawesi Selatan yang masih alami, sekaligus menjadi simbol potensi wisata yang terus dikembangkan oleh BUMDes Pada Ati untuk meningkatkan perekonomian lokal melalui UMKM dan kegiatan pariwisata.
               </p>
               <p className="text-sm sm:text-base indent-8">
-                Puncak Appasarenge adalah destinasi yang wajib dikunjungi bagi siapa saja yang ingin merasakan pesona alam Mattabulu. Dengan akses yang relatif mudah dan pemandangan yang menawan, puncak ini menjanjikan pengalaman wisata yang tak terlupakan di jantungan Sulawesi Selatan.
+                Puncak Appasarenge adalah destinasi yang wajib dikunjungi bagi siapa saja yang ingin merasakan pesona alam Desa Mattabulu. Dengan akses yang relatif mudah dan pemandangan yang menawan, puncak ini menjanjikan pengalaman wisata yang tak terlupakan di jantungan Sulawesi Selatan.
               </p>
             </>
           )}

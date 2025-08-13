@@ -63,7 +63,7 @@ const umkm2List = [
     price: "Rp 20.000",
     link: "produk-umkm/TehKopi",
   },
-  {
+  { 
     name: "Air Nira",
     image: "/airnira.jpg",
     price: "Rp 15.000",
