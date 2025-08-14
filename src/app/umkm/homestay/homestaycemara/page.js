@@ -125,7 +125,7 @@ export default function HomestayCemara() {
                     Kontak
                   </p>
                   <p className="mt-1 text-black text-sm sm:text-base">
-                    📞 08132337471
+                    📞 0813-5536-7552
                   </p>
                 </div>
               </div>
