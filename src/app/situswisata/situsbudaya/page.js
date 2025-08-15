@@ -15,7 +15,7 @@ export default function SitusBudayaPage() {
     },
     awo: {
       title: "Petta Awo",
-      image: "/awo.jpg",
+      image: "/pettaawo.jpg",
     },
     abbanuange: {
       title: "Petta Abbanuange",
