@@ -2,7 +2,7 @@
   import { useState, useEffect } from "react";
   import Link from "next/link";
 
-  export default function Header() {
+  export default function HeaderMain() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isTop, setIsTop] = useState(true);
@@ -31,9 +31,9 @@
         }`}
       >
         <div
-          className="bg-[#FAE8B4]/90 backdrop-blur-md shadow-lg 
-             w-full max-w-7xl mx-auto flex justify-between items-center 
-             px-5 md:px-15 py-2 rounded-b-2xl transition-colors duration-300"
+          className={`${
+            isTop ? "bg-transparent" : "bg-[#FAE8B4]/90 backdrop-blur-md shadow-lg"
+          } w-full max-w-7xl mx-auto flex justify-between items-center px-5 md:px-15 py-2 rounded-b-2xl transition-colors duration-300`}
         >
           {/* Logo */}
           <div className="flex items-center">
@@ -44,16 +44,19 @@
 
           {/* Hamburger Button */}
           <button
-            className="md:hidden text-[#574A24] text-[17px]"
+            className="md:hidden text-white text-[17px]"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? "✖" : "☰"}
           </button>
 
           {/* Menu Navigasi Desktop */}
-          <nav className={`hidden md:flex space-x-6 font-semibold transition-colors duration-300 ${ isTop ? "text-[#574A24]" : "text-[#574A24]"}`}
+          <nav className={`hidden md:flex space-x-6 font-semibold transition-colors duration-300 ${ isTop ? "text-[#fffbee]" : "text-[#574A24]"}`}
 >
             <Link href="/">Beranda</Link>
+            <Link href="/profil">Profil Desa</Link>
+            <Link href="/informasi">Informasi</Link>
+            <Link href="/produk">Produk</Link>
           </nav>
         </div>
 

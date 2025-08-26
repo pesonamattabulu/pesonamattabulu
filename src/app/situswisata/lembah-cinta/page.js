@@ -28,31 +28,12 @@ export default function LembahCintaPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-grow mx-auto px-4 sm:px-6 py-6 sm:py-8 w-full max-w-4xl">
+      <main className="flex-grow mx-auto px-4 sm:px-6 py-6 sm:py-8 w-full max-w-4xl mt-18 md:mt-28">
         <div className="flex justify-end space-x-2 mb-4 sm:mb-6">
-          <Link
-            href="/"
-            title="Home"
-            className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#62BEDD] text-white rounded-full shadow hover:bg-[#4aaac2] transition"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 sm:w-5 sm:h-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M3 9L12 2l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-              <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>
-          </Link>
           <Link
             href="/situswisata"
             title="Kembali"
-            className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-[#62BEDD] text-white rounded-full shadow hover:bg-[#4aaac2] transition"
+            className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#574A24] text-white rounded-full shadow hover:bg-[#80775c] transition"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

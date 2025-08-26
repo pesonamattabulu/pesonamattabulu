@@ -11,34 +11,16 @@ export default function Page() {
       <Header />
 
       {/* Main content */}
-      <main className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <main className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 pt-20 md:pt-28">
         {/* Judul + Tombol Navigasi */}
         <div className="relative mb-6 sm:mb-10 flex items-center justify-center w-full">
           <h1 className="text-lg sm:text-2xl md:text-3xl font-bold text-black text-center">Kayu Secang</h1>
           <div className="absolute right-0 flex space-x-2">
-            <Link
-              href="/"
-              title="Home"
-              className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#62BEDD] text-white rounded-full shadow hover:bg-[#4aaac2] transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 sm:w-5 sm:h-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M3 9L12 2l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                <polyline points="9 22 9 12 15 12 15 22" />
-              </svg>
-            </Link>
+            
             <Link
               href="/umkm/produk-umkm"
               title="Kembali"
-              className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#62BEDD] text-white rounded-full shadow hover:bg-[#4aaac2] transition"
+              className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#574A24] text-white rounded-full shadow hover:bg-[#80775c] transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -4,7 +4,8 @@ import React from "react";
 import Slider from "react-slick";
 import Link from "next/link";
 import Head from "next/head";
-
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -25,47 +26,25 @@ export default function HomestayKemiri() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-full">
       <Head>
         <title>Homestay Kemiri - Pesona Mattabulu</title>
       </Head>
 
       {/* Header */}
-      <header className="bg-[#62BEDD] h-20 sm:h-30 px-4 sm:px-6 flex items-center justify-center">
-          <img
-            src="/icon1.png"
-            alt="Pesona Mattabulu"
-            className="h-full max-h-full object-contain"
-          />
-      </header>
+      <Header />
 
-      {/* Slider Section */}
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-10 w-full pt-20 md:pt-28">
+
+         {/* Slider Section */}
       <section className="relative px-4 sm:px-6 pt-16 sm:pt-20 pb-6 max-w-7xl mx-auto w-full">
         {/* Floating Buttons */}
         <div className="absolute top-4 right-4 z-20 flex space-x-2">
           <Link
-            href="/"
-            title="Home"
-            className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#62BEDD] text-white rounded-full shadow hover:bg-[#4aaac2]"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 sm:w-5 sm:h-5"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M3 9L12 2l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-              <polyline points="9 22 9 12 15 12 15 22" />
-            </svg>
-          </Link>
-          <Link
             href="/umkm/homestay"
             title="Kembali"
-            className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#62BEDD] text-white rounded-full shadow hover:bg-[#4aaac2]"
+            className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#574A24] text-white rounded-full shadow hover:bg-[#80775c]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,13 +75,12 @@ export default function HomestayKemiri() {
         </Slider>
       </section>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-10">
+      
         <h1 className="text-xl sm:text-2xl font-bold text-black mb-6">
           Homestay Kemiri
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start w-full">
           {/* Gambar */}
           <div>
             <img
@@ -176,88 +154,38 @@ export default function HomestayKemiri() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#62BEDD] text-white px-4 sm:px-6 mt-auto overflow-hidden">
-        <div className="max-w-7xl mx-auto h-full flex flex-col md:flex-col lg:flex-row justify-center md:justify-center lg:justify-between items-center space-y-4 md:space-y-4 lg:space-y-0 py-4 md:py-4 lg:py-0 text-center md:text-center lg:text-left">
-          {/* Logo kiri */}
-          <div className="h-full flex items-center">
-            <img
-              src="/icon1.png"
-              alt="Pesona Mattabulu"
-              className="h-16 md:h-20 lg:h-30 object-contain"
-            />
-          </div>
+      <Footer />
 
-          {/* Location + Sosmed di kanan */}
-          <div className="flex flex-col md:flex-col lg:flex-row lg:items-start lg:space-x-12 text-xs md:text-sm">
-            {/* Location */}
-            <div className="text-center md:text-center lg:text-left">
-              <p className="font-semibold">Location</p>
-              <p>
-                Desa Mattabulu, Kecamatan Lalabata,
-                <br />
-                Kabupaten Soppeng, Sulawesi Selatan
-                <br />
-                90811.
-              </p>
-            </div>
+ <style jsx global>{`
+        html, body {
+          overflow-x: hidden;
+          width: 100%;
+          margin: 0;
+        }
 
-            {/* Sosmed */}
-            <div className="mt-4 md:mt-4 lg:mt-0 text-center md:text-center lg:text-left">
-              <p className="font-semibold mb-2">Find us on...</p>
-              <div className="flex justify-center md:justify-center lg:justify-start space-x-3">
-                <a href="#">
-                  <img
-                    src="/facebook.png"
-                    alt="Facebook"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/instagram.png"
-                    alt="Instagram"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/yt.png"
-                    alt="YouTube"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="/tiktok.png"
-                    alt="TikTok"
-                    className="h-5 md:h-6 lg:h-6 w-5 md:w-6 lg:w-6"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+        .slick-prev:before,
+        .slick-next:before {
+          color: black;
+          font-size: 28px;
+        }
 
-      <style jsx global>{`
-  html, body {
-    overflow-x: hidden;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    color: black;
-    font-size: 30px;
-  }
-  .slick-prev {
-    left: -20px;
-    z-index: 10;
-  }
-  .slick-next {
-    right: -10px;
-    z-index: 10;
-  }
-`}</style>
+        .slick-prev {
+          left: 20px !important;
+          z-index: 20;
+        }
+        .slick-next {
+          right: 20px !important;
+          z-index: 20;
+        }
 
+        .slick-list {
+          margin: 0 -6px;
+          overflow: hidden;
+        }
+        .slick-slide > div {
+          margin: 0 6px;
+        }
+      `}</style>
     </div>
   );
 }
