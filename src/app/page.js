@@ -45,14 +45,16 @@ export default function Home() {
             Pesona alam, harmoni budaya
           </p>
 
-          <button className="bg-[#493c27] hover:bg-[#80775c] text-[#fae8b4] font-light text-xs sm:text-sm md:text-base mt-5 md:mt-5 py-2 px-3 sm:py-2 sm:px-4 md:py-2 md:px-6 rounded-md shadow-lg transition duration-300">
+          <button 
+          onClick={() => window.location.href = "#informasi"}
+          className="bg-[#493c27] hover:bg-[#80775c] text-[#fae8b4] font-light text-xs sm:text-sm md:text-base mt-5 md:mt-5 py-2 px-3 sm:py-2 sm:px-4 md:py-2 md:px-6 rounded-md shadow-lg transition duration-300">
             EXPLORE
           </button>
             
         </div>
       </section>
 
-      <section className="w-full bg-white py-6 px-8 md:py-12 md:px-16 mt-5 md:mt-15">
+      <section id="profil" className="w-full bg-white py-6 px-8 md:py-12 md:px-16 mt-5 md:mt-15">
         <div className="max-w-6xl mx-auto grid grid-cols-2 gap-4 md:gap-8 items-center">
     
             {/* Video YouTube */}
@@ -112,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Produk UMKM */}  
-       <div className="bg-[#f9f3e2] py-15 mb-15">
+       <div id="produk" className="bg-[#f9f3e2] py-15 mb-15">
         <div className="container mx-auto px-20">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-xl md:text-3xl font-bold text-[#493c27]">Produk UMKM</h2>
@@ -224,7 +226,7 @@ export default function Home() {
         </div>
       </div>
 
-<section className="container mx-auto p-6 mt-10 mb-15 px-15">
+<section id="informasi" className="container mx-auto p-6 mt-10 mb-15 px-15">
   <h2 className="text-2xl md:text-4xl font-bold text-center md:text-center mb-10 text-[#574A24]">LOKASI</h2>
   <div className="flex flex-col md:flex-row gap-6">
     {/* Map Section */}
@@ -242,7 +244,7 @@ export default function Home() {
     </div>
 
     {/* Info Section */}
-    <div className="flex flex-col w-full md:w-1/2 bg-stone-900 text-white rounded-lg shadow-md p-6 justify-center">
+    <div className="flex flex-col w-full md:w-1/2 bg-stone-900 text-white rounded-lg shadow-md px-6 md:px-15 py-8 justify-center">
       <h2 className="text-sm md:text-2xl font-bold mb-4 text-center md:text-start">Lokasi Desa Mattabulu</h2>
       <p className="text-stone-300 mb-4 md:text-base text-xs">
         Temukan posisi strategis Desa Mattabulu di peta dengan mudah dan lengkap.
@@ -255,7 +257,7 @@ export default function Home() {
         <div>
           <p className="flex items-center text-xs md:text-base">
             <span className="text-amber-400 mr-2 text-x">🏠</span>
-            Alamat Lengkap: Desa Mattabulu, Kecamatan Lalabata, Kabupaten Soppeng , Sulawesi Selatan, Indonesia
+            Alamat Lengkap: Desa Mattabulu, Kecamatan Lalabata, Kabupaten Soppeng, Sulawesi Selatan, Indonesia
           </p>
         </div>
         <div>
@@ -265,7 +267,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex mt-10">
+      <div className="flex mt-10 justify-center md:justify-start">
         <a href="https://www.google.com/maps/place/Mattabulu,+Kec.+Lalabata,+Kabupaten+Soppeng,+Sulawesi+Selatan/@-4.3623959,119.768108,15z/data=!4m6!3m5!1s0x2d95f53ab069d80b:0x42229b4ad45425c8!8m2!3d-4.3664321!4d119.8005027!16s%2Fg%2F1hm5twk02?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D" className="bg-[#fae8b4] text-[#574A24] text-xs md:text-base px-4 py-2 rounded hover:bg-[#80775c]">
           Navigasi ke Desa
         </a>

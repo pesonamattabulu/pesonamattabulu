@@ -54,9 +54,9 @@
           <nav className={`hidden md:flex space-x-6 font-semibold transition-colors duration-300 ${ isTop ? "text-[#fffbee]" : "text-[#574A24]"}`}
 >
             <Link href="/">Beranda</Link>
-            <Link href="/profil">Profil Desa</Link>
-            <Link href="/informasi">Informasi</Link>
-            <Link href="/produk">Produk</Link>
+            <Link href="#profil">Profil Desa</Link>
+            <Link href="#informasi">Lokasi</Link>
+            <Link href="#produk">Produk</Link>
           </nav>
         </div>
 
@@ -68,7 +68,7 @@
                       space-y-4 py-4 px-8 w-4/5 max-w-sm rounded-xl shadow-lg">
                 <Link href="/" onClick={() => setIsOpen(false)}>Beranda</Link>
                 <Link href="/profil" onClick={() => setIsOpen(false)}>Profil Desa</Link>
-                <Link href="/informasi" onClick={() => setIsOpen(false)}>Informasi</Link>
+                <Link href="/informasi" onClick={() => setIsOpen(false)}>Lokasi</Link>
                 <Link href="/produk" onClick={() => setIsOpen(false)}>Produk</Link>
               </div>
           </div>
