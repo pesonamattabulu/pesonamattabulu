@@ -30,7 +30,7 @@ export default function Home() {
       <HeaderMain />
 
       {/* Hero Section (gambar dan deskripsi) */}
-      <section className="relative h-max sm:h-[500px] md:h-[650px]">
+      <section className="relative h-[350px] sm:h-[500px] md:h-[650px]">
         {/* Gambar latar */}
         <img
           src="/latar2.png"
@@ -40,19 +40,19 @@ export default function Home() {
 
         {/* Kotak hitam transparan*/}
         <div className="absolute inset-0 bg-[#00000099] p-4 md:p-10 text-white flex flex-col justify-center items-center text-center">
-          <h1 className={`${rockSalt.className} mb-1 md:mb-5 text-sm md:text-6xl`}>Desa Mattabulu</h1>
-          <p className="italic text-[8px] md:text-xl opacity-90">
+          <h1 className={`${rockSalt.className} mb-3 md:mb-5 text-xl md:text-6xl`}>Desa Mattabulu</h1>
+          <p className="italic text-xs md:text-xl opacity-90">
             Pesona alam, harmoni budaya
           </p>
 
-          <button className="bg-[#493c27] hover:bg-[#80775c] text-[#fae8b4] font-semibold text-[5px] sm:text-sm md:text-base mt-2 md:mt-5 py-1 px-3 sm:py-2 sm:px-4 md:py-2 md:px-6 rounded-md shadow-lg transition duration-300">
-            GET STARTED
+          <button className="bg-[#493c27] hover:bg-[#80775c] text-[#fae8b4] font-light text-xs sm:text-sm md:text-base mt-5 md:mt-5 py-2 px-3 sm:py-2 sm:px-4 md:py-2 md:px-6 rounded-md shadow-lg transition duration-300">
+            EXPLORE
           </button>
             
         </div>
       </section>
 
-      <section className="w-full bg-white py-6 px-3 md:py-12 md:px-16 mt-15">
+      <section className="w-full bg-white py-6 px-8 md:py-12 md:px-16 mt-5 md:mt-15">
         <div className="max-w-6xl mx-auto grid grid-cols-2 gap-4 md:gap-8 items-center">
     
             {/* Video YouTube */}
@@ -74,7 +74,7 @@ export default function Home() {
                 <h2 className="text-[#493c27] font-bold mb-2 text-[10px] sm:text-xl md:text-3xl">
                     Profil Desa Mattabulu
                 </h2>
-                <p className="leading-relaxed text-[8px] sm:text-sm md:text-base text-gray-700 text-justify">
+                <p className="leading-relaxed text-[10px] sm:text-sm md:text-base text-gray-700 text-justify">
                   Desa Mattabulu adalah desa yang terletak di Kecamatan Lalabata, Kabupaten Soppeng. 
                   Dikenal dengan keindahan alam yang menawan, budaya yang beragam, serta 
                   masyarakat yang menjunjung tinggi nilai gotong royong. 
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
        </section>
 
-       <section className="grid grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6 px-4 sm:px-6 py-10 md:py-20 mx-0 md:mx-15">
+       <section className="grid grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6 px-10 sm:px-6 py-5 md:py-20 mx-0 md:mx-15">
         {/* Card Situs Wisata */}
         <a href="/situswisata" className="relative rounded-lg overflow-hidden shadow-md group block">
           <img
@@ -94,7 +94,7 @@ export default function Home() {
             className="w-full h-32 sm:h-45 object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <h2 className="text-white text-lg sm:text-2xl font-semibold">Situs Wisata</h2>
+            <h2 className="text-white text-sm sm:text-2xl font-semibold">Situs Wisata</h2>
           </div>
         </a>
 
@@ -106,7 +106,7 @@ export default function Home() {
             className="w-full h-32 sm:h-45 object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <h2 className="text-white text-lg sm:text-2xl font-semibold text-center">UMKM & Homestay</h2>
+            <h2 className="text-white text-sm sm:text-2xl font-semibold text-center">UMKM & Homestay</h2>
           </div>
         </a>
       </section>
