@@ -28,7 +28,7 @@ export default function LembahCintaPage() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="flex-grow mx-auto px-4 sm:px-6 py-6 sm:py-8 w-full max-w-4xl mt-18 md:mt-28">
+      <main className="flex-grow mx-auto px-4 sm:px-6 py-6 sm:py-8 w-full max-w-4xl mt-18 md:mt-18">
         <div className="flex justify-end space-x-2 mb-4 sm:mb-6">
           <Link
             href="/situswisata"
