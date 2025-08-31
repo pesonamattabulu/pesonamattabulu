@@ -46,7 +46,7 @@ export default function Home() {
           </p>
 
           <button 
-          onClick={() => window.location.href = "#informasi"}
+          onClick={() => window.location.href = "#profil"}
           className="bg-[#493c27] hover:bg-[#80775c] text-[#fae8b4] font-light text-xs sm:text-sm md:text-base mt-5 md:mt-5 py-2 px-3 sm:py-2 sm:px-4 md:py-2 md:px-6 rounded-md shadow-lg transition duration-300">
             EXPLORE
           </button>

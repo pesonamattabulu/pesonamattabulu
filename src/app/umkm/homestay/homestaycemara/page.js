@@ -97,7 +97,7 @@ export default function HomestayCemara() {
           </div>
 
           {/* Info Box */}
-          <div className="bg-[#62BEDD] rounded-md p-4 sm:p-6 shadow-md">
+          <div className="bg-[#FAE8B4] rounded-md p-4 sm:p-6 shadow-md">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Price + Contact */}
               <div className="space-y-4">
@@ -105,7 +105,7 @@ export default function HomestayCemara() {
                   <p className="font-bold text-base sm:text-lg text-black mb-1">
                     Price
                   </p>
-                  <p className="bg-blue-100 text-black font-bold inline-block px-3 sm:px-4 py-1 rounded-md">
+                  <p className="bg-[#574A24] text-white font-bold inline-block px-3 sm:px-4 py-1 rounded-md">
                     Rp. 250.000
                   </p>
                 </div>
