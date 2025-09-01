@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <section id="profil" className="w-full bg-white py-6 px-8 md:py-12 md:px-16 mt-5 md:mt-15">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 gap-4 md:gap-8 items-center">
+        <div className="max-w-6xl mx-auto md:grid grid-cols-2 gap-4 md:gap-8 items-center">
     
             {/* Video YouTube */}
             <div className="w-full">
@@ -72,7 +72,7 @@ export default function Home() {
             </div>
 
             {/* Deskripsi */}
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-5 md:mt-0 bg-[#f9f3e2] md:bg-white">
                 <h2 className="text-[#493c27] font-bold mb-2 text-[10px] sm:text-xl md:text-3xl">
                     Profil Desa Mattabulu
                 </h2>
