@@ -140,7 +140,7 @@ export default function Home() {
             <SwiperSlide key={produk.id}>
               <a
                 href={produk.link}
-                className="group bg-[#80775C] rounded-xl shadow p-6 flex flex-col h-full min-h-[420px] md:min-h-[360px] space-y-2 transform transition-transform duration-300 hover:scale-95"
+                className="group bg-[#80775C] rounded-xl shadow p-6 flex flex-col h-full min-h-[420px] md:min-h-[360px] space-y-2 transform transition-transform duration-300 hover:scale-95 justify-center"
               >
                 <img
                   src={produk.img}
