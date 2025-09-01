@@ -162,7 +162,7 @@ export default function Home() {
 
     {/* Destinasi Wisata */}
       <div className="bg-[#493c27] py-20 mb-10 md:mt-5">
-        <div className="container mx-auto px-6 md:px-20">
+        <div className="container mx-auto px-6 md:px-0 lg:px-25">
           <div className="grid md:grid-cols-2 gap-8 items-center">
 
             {/* Kiri: Deskripsi */}
@@ -232,7 +232,7 @@ export default function Home() {
   <h2 className="text-2xl md:text-4xl font-bold text-center md:text-center mb-10 text-[#574A24]">LOKASI</h2>
   <div className="flex flex-col md:flex-row gap-6">
     {/* Map Section */}
-    <div className="w-full md:w-1/2 bg-stone-800 rounded-lg overflow-hidden shadow-md">
+    <div className="w-full md:w-1/2 h-full bg-stone-800 rounded-lg overflow-hidden shadow-md">
       <div className="relative">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63651.76903020442!2d119.76006134786286!3d-4.366888920665437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95f53ab069d80b%3A0x42229b4ad45425c8!2sMattabulu%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1756229103179!5m2!1sid!2sid"
