@@ -230,7 +230,7 @@ export default function Home() {
 
 <section id="informasi" className="container mx-auto p-6 mt-10 mb-15 px-15">
   <h2 className="text-2xl md:text-4xl font-bold text-center md:text-center mb-10 text-[#574A24]">LOKASI</h2>
-  <div className="flex flex-col md:flex-row gap-6">
+  <div className="flex flex-col md:flex-row gap-6 items-center">
     {/* Map Section */}
     <div className="w-full md:w-1/2 h-full bg-stone-800 rounded-lg overflow-hidden shadow-md">
       <div className="relative">
