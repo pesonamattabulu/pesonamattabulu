@@ -12,6 +12,7 @@ const rockSalt = Rock_Salt({
   weight: "400", // Rock Salt cuma ada regular
 });
 
+// Deskripsi jangan panjang, cukup beberapa kalimat
 const produkList = [
   { id: 1, nama: "Kopi Mattabulu", deskripsi: "Kopi khas Mattabulu dengan 2 varian biji kopi", img: "/kopi.jpg", link: "/umkm/produk-umkm/KopiMattabulu" },
   { id: 2, nama: "Madu", deskripsi: "Madu asli Mattabulu dengan 3 Varian rasa", img: "/madu.jpg", link: "/umkm/produk-umkm/Madu" },
@@ -74,7 +75,7 @@ export default function Home() {
             {/* Deskripsi */}
             <div className="flex flex-col mt-5 md:mt-0 bg-[#f9f3e2] md:bg-white">
                 <h2 className="text-[#493c27] font-bold mb-2 text-[10px] sm:text-xl md:text-3xl">
-                    Profil Desa Mattabulu
+                  Profil Desa Mattabulu
                 </h2>
                 <p className="leading-relaxed text-[10px] sm:text-sm md:text-base text-gray-700 text-justify">
                   Desa Mattabulu adalah desa yang terletak di Kecamatan Lalabata, Kabupaten Soppeng. 
@@ -139,12 +140,12 @@ export default function Home() {
             <SwiperSlide key={produk.id}>
               <a
                 href={produk.link}
-                className="group bg-[#80775C] rounded-xl shadow p-6 flex flex-col h-full min-h-[320px] space-y-2 transform transition-transform duration-300 hover:scale-95"
+                className="group bg-[#80775C] rounded-xl shadow p-6 flex flex-col h-full min-h-[420px] md:min-h-[360px] space-y-2 transform transition-transform duration-300 hover:scale-95"
               >
                 <img
                   src={produk.img}
                   alt={produk.nama}
-                  className="w-full h-full md:h-90 object-cover rounded-lg mb-3"
+                  className="w-full aspect-[4/3] md:h-full object-cover rounded-lg mb-3"
                 />
                 <h3 className="text-sm md:text-lg font-bold text-white">{produk.nama}</h3>
                 <p className="text-xs md:text-sm text-gray-200">{produk.deskripsi}</p>
@@ -153,13 +154,14 @@ export default function Home() {
                 </span>
               </a>
             </SwiperSlide>
+
               ))}
             </Swiper>
           </div>
         </div>
 
     {/* Destinasi Wisata */}
-      <div className="bg-[#493c27] py-20 mb-10 md:mt-20">
+      <div className="bg-[#493c27] py-20 mb-10 md:mt-5">
         <div className="container mx-auto px-6 md:px-20">
           <div className="grid md:grid-cols-2 gap-8 items-center">
 
