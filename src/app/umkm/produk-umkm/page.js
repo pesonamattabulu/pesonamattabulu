@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import { useRouter } from 'next/navigation';
 
 const umkm2List = [
   {
@@ -108,6 +109,18 @@ const umkm2List = [
 ];
 
 export default function Page() {
+
+            const router = useRouter();
+          
+            const handleBack = (e) => {
+              e.preventDefault();
+              if (window.history.length > 1) {
+                router.back();
+              } else {
+                router.push('/umkm/produk-umkm'); // fallback kalau tidak ada history
+              }
+            };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -153,13 +166,13 @@ export default function Page() {
        <Header />
   
       {/* Main content */}
-      <main className="flex-grow flex items-center justify-center px-4 sm:px-6">
+      <main className="flex-grow flex items-center justify-center px-4 sm:px-6 pt-20 md:pt-28">
         <div className="w-full max-w-5xl flex flex-col items-center">
           {/* Judul + tombol navigasi */}
           <div className="relative mb-6 sm:mb-10 flex items-center justify-center w-full">
             <h1 className="text-lg sm:text-2xl md:text-3xl font-bold text-black text-center">Produk UMKM</h1>
             <div className="absolute right-0 flex space-x-2">
-              <Link href="/umkm" title="Kembali" className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#574A24] text-white rounded-full shadow hover:bg-[#80775c] transition">
+              <Link href="/umkm" onClick={handleBack} title="Kembali" className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#574A24] text-white rounded-full shadow hover:bg-[#80775c] transition">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <line x1="19" y1="12" x2="5" y2="12" />
                   <polyline points="12 19 5 12 12 5" />

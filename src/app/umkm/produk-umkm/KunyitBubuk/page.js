@@ -3,21 +3,35 @@
 import Link from "next/link";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import { useRouter } from 'next/navigation';
 
 export default function Page() {
+
+       const router = useRouter();
+        
+          const handleBack = (e) => {
+            e.preventDefault();
+            if (window.history.length > 1) {
+              router.back();
+            } else {
+              router.push('/umkm/produk-umkm'); // fallback kalau tidak ada history
+            }
+          };
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
       <Header />
 
       {/* Main content */}
-      <main className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 pt-20 md:28">
+      <main className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12 pt-20 md:pt-28">
         {/* Judul + Tombol Navigasi */}
         <div className="relative mb-6 sm:mb-10 flex items-center justify-center w-full">
           <h1 className="text-lg sm:text-2xl md:text-3xl font-bold text-black text-center">Kunyit Bubuk</h1>
           <div className="absolute right-0 flex space-x-2">
             <Link
               href="/umkm/produk-umkm"
+              onClick={handleBack}
               title="Kembali"
               className="w-6 h-6 sm:w-10 sm:h-10 flex items-center justify-center bg-[#574A24] text-white rounded-full shadow hover:bg-[#80775c] transition"
             >
@@ -51,7 +65,7 @@ export default function Page() {
             {/* Harga */}
             <div className="mb-4">
               <p className="text-lg sm:text-xl font-semibold mb-1">Price</p>
-              <span className="bg-[#62BEDD] text-white font-bold px-3 py-1 rounded text-base sm:text-lg">
+              <span className="bg-[#574A24] text-white font-bold px-3 py-1 rounded text-base sm:text-lg">
                 Rp. 15.000
               </span>
             </div>
@@ -71,7 +85,7 @@ export default function Page() {
               <p className="text-base sm:text-lg font-light">083110006061</p>
             </div>
 
-            <p className="text-sm text-blue-600 font-semibold mt-6">Dikelola oleh BUMDes</p>
+            <p className="text-sm text-[#80775c] font-semibold mt-6">Dikelola oleh BUMDes</p>
           </div>
         </div>
       </main>
