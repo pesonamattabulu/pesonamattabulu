@@ -279,7 +279,7 @@ export default function Home() {
 </section>
 
     
-      {/* Footer (biru) */}
+      {/* Footer */}
       <Footer />
     </div>
   );

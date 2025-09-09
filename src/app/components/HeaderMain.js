@@ -67,9 +67,9 @@
               <div className="bg-[#D6B588]/95 text-white flex flex-col items-center 
                       space-y-4 py-4 px-8 w-4/5 max-w-sm rounded-xl shadow-lg">
                 <Link href="/" onClick={() => setIsOpen(false)}>Beranda</Link>
-                <Link href="/profil" onClick={() => setIsOpen(false)}>Profil Desa</Link>
-                <Link href="/informasi" onClick={() => setIsOpen(false)}>Lokasi</Link>
-                <Link href="/produk" onClick={() => setIsOpen(false)}>Produk</Link>
+                <Link href="#profil" onClick={() => setIsOpen(false)}>Profil Desa</Link>
+                <Link href="#informasi" onClick={() => setIsOpen(false)}>Lokasi</Link>
+                <Link href="#produk" onClick={() => setIsOpen(false)}>Produk</Link>
               </div>
           </div>
         )}
